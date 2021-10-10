@@ -1,10 +1,8 @@
-$(document).ready(function () {
-    $('.nav__burger').click(function (event) {
-        $('.nav__burger,.nav__menu').toggleClass('active');
-        $('body').toggleClass('lock');
+const burger = document.querySelector('.nav__burger');
+if(burger){
+    const menu = document.querySelector('.nav__menu');
+    burger.addEventListener('click',function (e) {
+       burger.classList.toggle('active');
+       menu.classList.toggle('active');
     });
-    $('.nav_link[data-goto]').click(function (event) {
-        $('.nav__burger,.nav__menu').toggleClass('active');
-        $('body').toggleClass('lock');
-    });
-});;
+};

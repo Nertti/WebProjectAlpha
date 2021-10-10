@@ -1,6 +1,6 @@
 .nav{
   position: fixed;
-  z-index: 50;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -118,11 +118,11 @@
             margin: 10px 0;
             font-size: 22px;
           }
+          cursor: pointer;
           font-size: 18px;
           font-weight: 600;
           &:hover{
             color: $green;
-            cursor: pointer;
           }
         }
       }
