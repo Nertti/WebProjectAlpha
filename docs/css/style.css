@@ -90,6 +90,39 @@ h6 {
   font-weight: 400;
 }
 
+::-webkit-scrollbar {
+  /* 1 - скроллбар */
+  width: 8px;
+  height: 8px;
+  background-color: #101820;
+}
+
+::-webkit-scrollbar-button {
+  /* 2 - кнопка */
+}
+
+::-webkit-scrollbar-track {
+  /* 3 - трек */
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+}
+
+::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  border-radius: 4px;
+  background-color: #daded9;
+}
+
+::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+
+::-webkit-resizer {
+  /* 7 - изменение размеров */
+}
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -101,7 +134,7 @@ h6 {
           flex-direction: column;
   overflow: hidden;
   background-color: #28334a;
-  font-family: "Barlow Semi Condensed", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -113,6 +146,19 @@ h6 {
 
 main {
   padding: 70px 0;
+  font-style: italic;
+}
+
+.button {
+  width: 200px;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 700;
+  background-color: #daded9;
+  text-align: center;
+  border-radius: 25px;
+  color: #101820;
+  cursor: pointer;
 }
 
 .nav {
@@ -195,14 +241,21 @@ main {
 .nav .nav__head .nav__menu .nav__list li {
   cursor: pointer;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .nav .nav__head .nav__menu .nav__list li:hover {
   color: #c0df16;
 }
 
-.welcome__row {
+.welcome {
+  padding: 20px 0;
+}
+
+.welcome .welcome__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +267,7 @@ main {
           align-items: center;
 }
 
-.welcome__row .welcome__title {
+.welcome .welcome__row .welcome__title {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -224,12 +277,40 @@ main {
   text-transform: uppercase;
 }
 
-.welcome__row .welcome__description {
+.welcome .welcome__row .welcome__title span {
+  color: #c0df16;
+}
+
+.welcome .welcome__row .welcome__description {
   font-size: 18px;
   font-weight: 500;
-  max-width: 700px;
+  max-width: 500px;
   width: 100%;
   padding: 30px 0 0;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.welcome .welcome__row .welcome__button {
+  margin: 30px 0 0;
+}
+
+.welcome .welcome__row .welcome__img img {
+  max-width: 650px;
+}
+
+.line-welcome .line__txt {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  padding: 20px;
+  background-color: #daded9;
+  text-align: center;
+}
+
+.line-welcome .line__txt span {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
