@@ -145,7 +145,7 @@ h6 {
 }
 
 main {
-  padding: 70px 0;
+  padding: 70px 0 0;
   font-style: italic;
 }
 
@@ -159,6 +159,30 @@ main {
   border-radius: 25px;
   color: #101820;
   cursor: pointer;
+}
+
+.line {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #c0df16;
+  background-color: #c0df16;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #daded9;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  line-height: 25px;
+  font-style: normal;
 }
 
 .nav {
@@ -268,13 +292,7 @@ main {
 }
 
 .welcome .welcome__row .welcome__title {
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #daded9;
-  max-width: 500px;
-  width: 100%;
-  text-transform: uppercase;
+  max-width: 550px;
 }
 
 .welcome .welcome__row .welcome__title span {
@@ -282,13 +300,8 @@ main {
 }
 
 .welcome .welcome__row .welcome__description {
-  font-size: 18px;
-  font-weight: 500;
   max-width: 500px;
-  width: 100%;
   padding: 30px 0 0;
-  line-height: 20px;
-  font-style: normal;
 }
 
 .welcome .welcome__row .welcome__button {
@@ -296,7 +309,7 @@ main {
 }
 
 .welcome .welcome__row .welcome__img img {
-  max-width: 650px;
+  max-width: 500px;
 }
 
 .line-welcome .line__txt {
@@ -311,6 +324,210 @@ main {
 .line-welcome .line__txt span {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.services {
+  padding: 70px 0;
+}
+
+.services .services__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .services__row .services__txt {
+  max-width: 600px;
+  margin-right: 180px;
+  margin-left: 10px;
+}
+
+.services .services__row .services__txt .services__title {
+  font-size: 30px;
+}
+
+.services .services__row .services__txt .services__line {
+  margin: 10px 0 20px;
+}
+
+.services .services__row .services__txt .services__description {
+  max-width: 530px;
+}
+
+.services .services__row .card {
+  margin: 10px;
+  border-radius: 30px;
+  height: 220px;
+  width: 220px;
+  background-color: #fff;
+  position: relative;
+}
+
+.services .services__row .card span {
+  padding: 0 0 0 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  color: #101820;
+  line-height: 30px;
+  border-bottom: 2px solid #101820;
+}
+
+.services .services__row .card div {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 51, 74, 0.6);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.services .services__row .card div:hover {
+  background-color: rgba(40, 51, 74, 0.2);
+}
+
+.services .services__row .services__pointer {
+  margin: 10px;
+  height: 220px;
+  width: 220px;
+  position: relative;
+}
+
+.services .services__row .services__pointer .pointer {
+  background-color: rgba(56, 73, 103, 0.5);
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 50px;
+  left: 80px;
+}
+
+.services .services__row .services__pointer .pointer:hover {
+  background-color: rgba(56, 73, 103, 0.9);
+}
+
+.services .services__row .services__pointer .pointer:before,
+.services .services__row .services__pointer .pointer:after,
+.services .services__row .services__pointer .pointer span {
+  top: 25px;
+  right: 25px;
+  content: "";
+  background-color: #c0df16;
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  -webkit-transform-origin: right top;
+      -ms-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.services .services__row .services__pointer .pointer:after {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.services .services__row .services__pointer .pointer span {
+  width: 50px;
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.services .services__row .pointer__txt {
+  position: relative;
+  top: 70px;
+  width: 220px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #daded9;
+  font-size: 25px;
+}
+
+.reviews {
+  padding: 20px 0;
+}
+
+.reviews .reviews__name {
+  font-size: 35px;
+  margin: 0 auto;
+  line-height: 45px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.reviews .review {
+  max-width: 700px;
+  width: 100%;
+  margin: 25px auto;
+  border-radius: 30px;
+  background-color: rgba(56, 73, 103, 0.7);
+}
+
+.reviews .review .review__txt {
+  padding: 20px 30px;
+}
+
+.reviews .review .review__txt .review__name {
+  font-size: 20px;
+  color: #daded9;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.reviews .review .review__txt .review__description {
+  padding: 20px 30px 0;
+  line-height: 20px;
+  font-size: 18px;
+  color: rgba(204, 207, 222, 0.6);
+  position: relative;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.reviews .review .review__txt .review__description:before {
+  content: "—";
+  position: absolute;
+  left: 0;
+}
+
+.footer_line {
+  background-color: #daded9;
+  padding: 5px;
+}
+
+.footer__row {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
