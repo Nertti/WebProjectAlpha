@@ -45,7 +45,10 @@ main{
   background-color: $green;
 }
 .title{
-  font-size: 40px;
+  @include laptop {
+  font-size: 35px;
+  }
+  font-size: 38px;
   font-weight: 700;
   letter-spacing: 1px;
   color: $white;
