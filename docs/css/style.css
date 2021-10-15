@@ -315,6 +315,7 @@ main {
 
 .welcome .welcome__row .welcome__img img {
   max-width: 500px;
+  height: 750px;
 }
 
 .line-welcome .line__txt {
@@ -643,6 +644,9 @@ main {
     margin: 0 auto;
     max-width: 500px;
     width: 100%;
+    padding-bottom: 150%;
+    height: 0;
+    overflow: hidden;
   }
 
   .welcome .welcome__row .welcome__img .bgc {
@@ -810,6 +814,10 @@ main {
 }
 
 @media screen and (max-width: 540px) {
+  .welcome .welcome__row .welcome__img img {
+    height: auto;
+  }
+
   .services .services__row {
     max-width: 240px;
   }

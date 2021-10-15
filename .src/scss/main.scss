@@ -73,6 +73,9 @@
         margin: 0 auto;
         max-width: 500px;
         width: 100%;
+        padding-bottom: 150%; //соотношение 750/500
+        height: 0;
+        overflow: hidden;
       }
       .bgc{
         @include laptop{
@@ -87,6 +90,10 @@
       }
       img{
         max-width: 500px;
+        height: 750px;
+        @include tablet-S{
+          height: auto;
+        }
         @include laptop{
           position: relative;
           width: 100%;
