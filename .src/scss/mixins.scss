@@ -1,5 +1,5 @@
 @mixin mobile-S {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 335px) {
     @content;
   }
 }
@@ -10,6 +10,11 @@
 }
 @mixin mobile-L {
   @media screen and (max-width: 425px) {
+    @content;
+  }
+}
+@mixin mobile-XL {
+  @media screen and (max-width: 460px) {
     @content;
   }
 }
@@ -29,12 +34,12 @@
   }
 }
 @mixin laptop {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1077px) {
     @content;
   }
 }
 @mixin laptop-M {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1220px) {
     @content;
   }
 }
