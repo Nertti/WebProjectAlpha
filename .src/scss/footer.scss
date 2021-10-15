@@ -7,4 +7,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include tablet{
+    flex-direction: column;
+  }
+  .footer__block{
+    @include tablet{
+      padding: 10px 0;
+    }
+    .footer__txt{
+      line-height: 25px;
+      letter-spacing: 1px;
+    }
+
+
+    .footer__logo{
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      span{
+        color: $green;
+      }
+    }
+    .footer__social{
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      .circle{
+        border-radius: 50%;
+        background-color: rgba(56, 73, 103, 0.7);
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s ease 0s;
+        cursor: pointer;
+        &:hover{
+          background-color: #384967;
+        }
+      }
+    }
+  }
 }
