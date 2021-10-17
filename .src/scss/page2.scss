@@ -1,0 +1,68 @@
+.abonements_block{
+  padding: 50px 0;
+  .abon__title{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    @include mobile-L{
+      font-size: 40px;
+    }
+  }
+  .line_ss{
+    width: 300px;
+    margin: 0 auto;
+    @include mobile-L{
+      width: 250px;
+    }
+  }
+  .cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+    @include laptop-S{
+      flex-direction: column;
+    }
+    .card{
+      @include laptop-M{
+        max-width: 300px;
+      }
+      @include laptop-S{
+        max-width: 350px;
+        margin-bottom: 20px;
+       }
+      border-radius: 25px;
+      background-color: rgba(56, 73, 103, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      max-width: 350px;
+      width: 100%;
+      .name{
+        font-size: 30px;
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .number{
+        text-align: center;
+        font-size: 60px;
+        line-height: 70px;
+        color: $white;
+        font-weight: 800;
+      }
+      .line{
+        margin: 10px 0;
+      }
+      .description{
+        p{
+          &:before{
+            content: '>';
+            padding: 2px;
+          }
+        }
+      }
+    }
+  }
+}

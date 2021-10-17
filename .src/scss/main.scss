@@ -73,6 +73,8 @@
         margin: 0 auto;
         max-width: 500px;
         width: 100%;
+      }
+      @include tablet-S{
         padding-bottom: 150%; //соотношение 750/500
         height: 0;
         overflow: hidden;

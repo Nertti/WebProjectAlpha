@@ -29,7 +29,7 @@
   }
 }
 @mixin laptop-S {
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 970px) {
     @content;
   }
 }
