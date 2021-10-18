@@ -1,0 +1,32 @@
+.sale{
+  padding: 50px 0;
+  .sale__title{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .sale__block{
+    padding: 30px 0;
+  }
+  .sale__card{
+    border-radius: 25px;
+    background-color: rgba(56, 73, 103, 0.4);
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    .sale__question{
+      text-align: center;
+      border-radius: 25px;
+      font-size: 80px;
+      font-weight: 700;
+      color: #384967;
+      background-color: #101820;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+    }
+  }
+}
