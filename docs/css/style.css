@@ -896,6 +896,13 @@ main {
 }
 
 @media screen and (max-width: 1077px) {
+  .wrapper {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+
   .title {
     font-size: 35px;
   }

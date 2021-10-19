@@ -10,6 +10,9 @@
   overflow: hidden;
   background-color: $dark-blue;
   font-family: 'Montserrat', sans-serif;
+  @include laptop{
+    user-select: none;
+  }
 }
 
 .container{
