@@ -616,7 +616,7 @@ main {
   background-color: rgba(56, 73, 103, 0.4);
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
+  margin: 25px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,13 +629,37 @@ main {
 .sale .sale__card .sale__question {
   text-align: center;
   border-radius: 25px;
-  font-size: 80px;
+  font-size: 200px;
   font-weight: 700;
   color: #384967;
   background-color: #101820;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  min-width: 200px;
+  min-height: 200px;
+  line-height: 200px;
+}
+
+.sale .sale__card .sale__txt {
+  padding: 0 20px;
+}
+
+.sale .sale__card .sale__txt .sale__name {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sale .sale__card .sale__txt .sale__description {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 20px 0 30px;
+}
+
+.sale .sale__card .sale__txt .sale__PC {
+  text-align: right;
+  font-size: 16px;
+}
+
+.sale .sale__card .sale__txt .sale__PC:before {
+  content: "*";
 }
 
 .footer_line {
@@ -830,6 +854,36 @@ main {
     max-width: 350px;
     margin-bottom: 20px;
   }
+
+  .sale .sale__card {
+    position: relative;
+    max-width: 600px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .sale .sale__card .sale__question {
+    font-size: 170px;
+    min-width: 170px;
+    min-height: 170px;
+    line-height: 170px;
+  }
+
+  .sale .sale__card .sale__txt {
+    padding: 0;
+  }
+
+  .sale .sale__card .sale__txt .sale__name {
+    position: absolute;
+    top: 50px;
+    width: 52%;
+    right: 25px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -953,11 +1007,38 @@ main {
   .services .services__row {
     max-width: 240px;
   }
+
+  .services .services__row .services__txt {
+    max-width: 100%;
+  }
+
+  .sale .sale__card {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+
+  .sale .sale__card .sale__question {
+    margin-bottom: 20px;
+  }
+
+  .sale .sale__card .sale__txt .sale__name {
+    position: unset;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 460px) {
   .welcome .welcome__row .welcome__txt .welcome__title {
     font-size: 30px;
+  }
+
+  .sale .sale__card .sale__txt .sale__name {
+    font-size: 25px;
+  }
+
+  .sale .sale__card .sale__txt .sale__description {
+    font-size: 18px;
   }
 }
 

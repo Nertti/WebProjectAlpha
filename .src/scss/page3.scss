@@ -13,20 +13,76 @@
     background-color: rgba(56, 73, 103, 0.4);
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto;
+    margin: 25px auto;
     display: flex;
     justify-content: space-between;
     padding: 25px;
+    @include laptop-S{
+      position: relative;
+      max-width: 600px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include tablet-S{
+      align-items: normal;
+    }
     .sale__question{
       text-align: center;
       border-radius: 25px;
-      font-size: 80px;
+      font-size: 200px;
       font-weight: 700;
       color: #384967;
       background-color: #101820;
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
+      min-width: 200px;
+      min-height: 200px;
+      line-height: 200px;
+      @include laptop-S{
+        font-size: 170px;
+        min-width: 170px;
+        min-height: 170px;
+        line-height: 170px;
+      }
+      @include tablet-S{
+        margin-bottom: 20px;
+      }
+    }
+    .sale__txt{
+      padding: 0 20px;
+      @include laptop-S{
+        padding: 0;
+      }
+      .sale__name{
+        font-size: 30px;
+        font-weight: 600;
+        @include laptop-S{
+          position: absolute;
+          top: 50px;
+          width: 52%;
+          right: 25px;
+        }
+        @include tablet-S{
+          position: unset;
+          width: 100%;
+        }
+        @include mobile-XL{
+          font-size: 25px;
+        }
+      }
+      .sale__description{
+        font-weight: 500;
+        font-size: 20px;
+        padding: 20px 0 30px;
+        @include mobile-XL{
+          font-size: 18px;
+        }
+      }
+      .sale__PC{
+        text-align: right;
+        font-size: 16px;
+        &:before{
+          content: '*';
+        }
+      }
     }
   }
 }

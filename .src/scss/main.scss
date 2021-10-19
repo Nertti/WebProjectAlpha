@@ -153,6 +153,9 @@
       @include tablet{
         margin-right: auto;
       }
+      @include tablet-S{
+        max-width: 100%;
+      }
       .services__title{
         font-size: 30px;
       }
