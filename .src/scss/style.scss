@@ -2,13 +2,16 @@
 @import "normalize.scss";
 @import "colors.scss";
 @import "scrollBar.scss";
-
 .wrapper{
   min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   background-color: $dark-blue;
+  background-image: url("../img/back.png");
+  background-repeat: repeat;
+  background-size: 550%;
+  background-position: top center;
   font-family: 'Montserrat', sans-serif;
   @include laptop{
     user-select: none;
