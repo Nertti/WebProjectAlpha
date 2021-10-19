@@ -34,7 +34,7 @@ main{
   font-weight: 700;
   background-color: $white;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 7px;
   color: $dark;
   cursor: pointer;
 }
@@ -66,4 +66,5 @@ main{
 @import "main.scss";
 @import "page2.scss";
 @import "page3.scss";
+@import "page4.scss";
 @import "footer.scss";

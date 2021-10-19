@@ -156,7 +156,7 @@ main {
   font-weight: 700;
   background-color: #daded9;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 7px;
   color: #101820;
   cursor: pointer;
 }
@@ -651,6 +651,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   padding: 20px 0 30px;
+  line-height: 22px;
 }
 
 .sale .sale__card .sale__txt .sale__PC {
@@ -660,6 +661,148 @@ main {
 
 .sale .sale__card .sale__txt .sale__PC:before {
   content: "*";
+}
+
+.first_sport .first_title {
+  text-align: center;
+  padding: 50px 0 0;
+}
+
+.first_sport .block_sport {
+  border-radius: 20px;
+  background-color: rgba(16, 24, 32, 0.8);
+  background-image: url("../img/bag.svg");
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position: bottom center;
+  max-width: 600px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.first_sport .block_sport .block__name {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.first_sport .block_sport .block__name:after {
+  content: ":)";
+}
+
+.first_sport .block_sport .block_input {
+  position: relative;
+  margin: 20px;
+}
+
+.first_sport .block_sport .block_input .block__input {
+  padding: 13px 20px 13px 55px;
+  height: 48px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 7px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  outline: none;
+  color: #101820;
+  background-color: #daded9;
+  border: none;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+}
+
+.first_sport .block_sport .block_input .block__input:focus,
+.first_sport .block_sport .block_input .block__input:active {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+}
+
+.first_sport .block_sport .block_input input::-webkit-input-placeholder {
+  color: #101820;
+  opacity: 0.8;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input::-moz-placeholder {
+  color: #101820;
+  opacity: 0.8;
+  -moz-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input:-ms-input-placeholder {
+  color: #101820;
+  opacity: 0.8;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input::-ms-input-placeholder {
+  color: #101820;
+  opacity: 0.8;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input::placeholder {
+  color: #101820;
+  opacity: 0.8;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input:focus::-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input input:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.first_sport .block_sport .block_input .input_icon {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 30px;
+}
+
+.first_sport .block_sport .first_btn {
+  margin: 50px auto;
 }
 
 .footer_line {
@@ -1005,7 +1148,13 @@ main {
   }
 
   .services .services__row {
-    max-width: 240px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .services .services__row .services__txt {
@@ -1026,6 +1175,10 @@ main {
     position: unset;
     width: 100%;
   }
+
+  .first_sport .block_sport .block__name {
+    padding: 50px 0;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -1039,6 +1192,11 @@ main {
 
   .sale .sale__card .sale__txt .sale__description {
     font-size: 18px;
+  }
+
+  .first_sport .block_sport .block__name {
+    padding: 30px 0;
+    font-size: 25px;
   }
 }
 
@@ -1058,6 +1216,10 @@ main {
   .abonements_block .line_ss {
     width: 250px;
   }
+
+  .first_sport .block_sport .first_btn {
+    margin: 20px auto;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1071,5 +1233,9 @@ main {
 
   .best .best__row .best__block .best__description {
     font-size: 16px;
+  }
+
+  .first_sport .block_sport .block_input {
+    margin: 20px 0;
   }
 }

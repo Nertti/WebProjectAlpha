@@ -1,0 +1,87 @@
+.first_sport{
+  .first_title{
+    text-align: center;
+    padding: 50px 0 0;
+  }
+  .block_sport{
+    border-radius: 20px;
+    background-color: rgba(16, 24, 32, 0.8);
+    background-image: url("../img/bag.svg");
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: bottom center;
+    max-width: 600px;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+
+    margin: 50px auto;
+    padding: 30px;
+    .block__name{
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      padding: 80px 0;
+      @include tablet-S{
+        padding: 50px 0;
+      }
+      @include mobile-XL{
+        padding: 30px 0;
+        font-size: 25px;
+      }
+      &:after{
+        content: ':)';
+      }
+    }
+    .block_input{
+      position: relative;
+      margin: 20px;
+      @include mobile-M{
+        margin: 20px 0;
+      }
+      .block__input{
+        padding: 13px 20px 13px 55px;
+        height: 48px;
+        width: 100%;
+        font-weight: 500;
+        border-radius: 7px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        outline: none;
+        color: $dark;
+        background-color: $white;
+        border: none;
+        transition: all 200ms linear;
+        box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+        &:focus,
+        &:active{
+          border: none;
+          outline: none;
+          box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+        }
+      }
+      input::placeholder{
+        color: #101820;
+        opacity: 0.8;
+        transition: all 200ms linear;
+      }
+      input:focus::placeholder{
+        opacity: 0;
+        transition: all 200ms linear;
+      }
+      .input_icon{
+        position: absolute;
+        left: 12px;
+        top: 8px;
+        width: 30px;
+      }
+    }
+    .first_btn{
+      margin: 50px auto;
+      @include mobile-L{
+        margin: 20px auto;
+      }
+    }
+  }
+}
