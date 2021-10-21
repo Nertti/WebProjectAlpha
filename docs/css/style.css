@@ -159,6 +159,7 @@ main {
   border-radius: 7px;
   color: #101820;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .line {
@@ -375,6 +376,15 @@ main {
   position: relative;
 }
 
+.services .services__row .card img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  z-index: 0;
+  border-radius: 30px;
+}
+
 .services .services__row .card span {
   padding: 0 0 0 20px;
   font-weight: 600;
@@ -383,17 +393,19 @@ main {
   position: absolute;
   top: 150px;
   left: 0;
-  color: #101820;
+  color: #fff;
   line-height: 30px;
-  border-bottom: 2px solid #101820;
+  border-bottom: 2px solid #fff;
+  z-index: 2;
 }
 
 .services .services__row .card div {
-  position: relative;
-  z-index: 2;
+  top: 0;
+  position: absolute;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba(40, 51, 74, 0.6);
+  background-color: rgba(40, 51, 74, 0.7);
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -401,7 +413,7 @@ main {
 }
 
 .services .services__row .card div:hover {
-  background-color: rgba(40, 51, 74, 0.2);
+  background-color: rgba(40, 51, 74, 0.4);
 }
 
 .services .services__row .services__pointer {

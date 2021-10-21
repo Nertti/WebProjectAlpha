@@ -1,18 +1,20 @@
-.welcome{
+.welcome {
   padding: 20px 0;
-  .welcome__row{
+
+  .welcome__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     //min-height: 750px;
-    @include laptop{
+    @include laptop {
       display: block;
       position: relative;
     }
-    .welcome__txt{
+
+    .welcome__txt {
       max-width: 500px;
       width: 100%;
-      @include laptop{
+      @include laptop {
         display: block;
         position: absolute;
         z-index: 1;
@@ -20,50 +22,55 @@
         top: 200px;
         left: 0;
         right: 0;
-        @include tablet-S{
+        @include tablet-S {
           top: 100px;
           max-width: 350px;
         }
-        @include mobile-XL{
+        @include mobile-XL {
           top: 100px;
           max-width: 300px;
         }
-        @include mobile-M{
+        @include mobile-M {
           top: 50px;
           max-width: 270px;
         }
-        @include mobile-S{
+        @include mobile-S {
           top: 25px;
           max-width: 250px;
         }
         max-width: 450px;
       }
 
-      .welcome__title{
+      .welcome__title {
         max-width: 550px;
-        span{
+
+        span {
           color: $green;
         }
-        @include mobile-XL{
+
+        @include mobile-XL {
           font-size: 30px;
         }
       }
-      .welcome__description{
+
+      .welcome__description {
         max-width: 500px;
         padding: 30px 0 0;
-        @include mobile-L{
+        @include mobile-L {
           font-size: 16px;
         }
       }
-      .welcome__button{
+
+      .welcome__button {
         margin: 30px 0 0;
-        @include mobile-M{
+        @include mobile-M {
           margin: 10px 0 0;
         }
       }
     }
-    .welcome__img{
-      @include laptop{
+
+    .welcome__img {
+      @include laptop {
         display: block;
         position: relative;
         top: 0;
@@ -74,13 +81,14 @@
         max-width: 500px;
         width: 100%;
       }
-      @include tablet-S{
+      @include tablet-S {
         padding-bottom: 150%; //соотношение 750/500
         height: 0;
         overflow: hidden;
       }
-      .bgc{
-        @include laptop{
+
+      .bgc {
+        @include laptop {
           position: absolute;
           top: 0;
           width: 100%;
@@ -90,13 +98,14 @@
           z-index: 1;
         }
       }
-      img{
+
+      img {
         max-width: 500px;
         height: 750px;
-        @include tablet-S{
+        @include tablet-S {
           height: auto;
         }
-        @include laptop{
+        @include laptop {
           position: relative;
           width: 100%;
           margin: 0 auto;
@@ -106,8 +115,9 @@
     }
   }
 }
-.line-welcome{
-  .line__txt{
+
+.line-welcome {
+  .line__txt {
     text-transform: uppercase;
     font-style: normal;
     font-weight: 500;
@@ -116,70 +126,86 @@
     text-align: center;
     //width: auto;
     //margin: 0 auto;
-    span{
+    span {
       text-decoration: underline;
       cursor: pointer;
-      &:hover{
+
+      &:hover {
 
       }
     }
   }
 }
-.services{
+
+.services {
   padding: 70px 0;
-  @include laptop-M{
+  @include laptop-M {
     padding: 70px 0 0;
   }
-  .services__row{
+
+  .services__row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     //justify-content: space-between;
-    @include laptop-M{
+    @include laptop-M {
       max-width: 720px;
       width: 100%;
     }
-    @include tablet{
+    @include tablet {
       max-width: 480px;
     }
-    @include tablet-S{
+    @include tablet-S {
       flex-direction: column;
       align-items: center;
     }
     margin: auto;
-    .services__txt{
+
+    .services__txt {
       max-width: 600px;
       margin-right: 180px;
       margin-left: 10px;
-      @include tablet{
+      @include tablet {
         margin-right: auto;
       }
-      @include tablet-S{
+      @include tablet-S {
         max-width: 100%;
       }
-      .services__title{
+
+      .services__title {
         font-size: 30px;
       }
-      .services__line{
+
+      .services__line {
         margin: 10px 0 20px;
       }
-      .services__description{
+
+      .services__description {
         max-width: 530px;
       }
     }
-    @include laptop-M{
-      .hidden{
+
+    @include laptop-M {
+      .hidden {
         display: none;
       }
     }
-    .card{
+
+    .card {
       margin: 10px;
       border-radius: 30px;
       height: 220px;
       width: 220px;
       background-color: #fff;
       position: relative;
-      span{
+      img{
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        z-index: 0;
+        border-radius: 30px;
+      }
+      span {
         padding: 0 0 0 20px;
         font-weight: 600;
         font-style: normal;
@@ -187,33 +213,40 @@
         position: absolute;
         top: 150px;
         left: 0;
-        color: $dark;
+        color: #fff;
         line-height: 30px;
-        border-bottom: 2px solid $dark;
+        border-bottom: 2px solid #fff;
+        z-index: 2;
         //text-transform: uppercase;
       }
-      div{
-        position: relative;
-        z-index: 2;
+
+      div {
+        top: 0;
+        position: absolute;
+        z-index: 1;
         width: 100%;
         height: 100%;
-        background-color: rgba(40, 51, 74, 0.60);
+        background-color: rgba(40, 51, 74, 0.70);
         transition: all 0.3s ease 0s;
         cursor: pointer;
-        &:hover{
-          background-color: rgba(40, 51, 74, 0.20);
+
+        &:hover {
+          background-color: rgba(40, 51, 74, 0.40);
         }
       }
     }
-    .services__pointer{
+
+    .services__pointer {
       margin: 10px;
       height: 220px;
       width: 220px;
       position: relative;
-      .pointer{
-        &:hover{
+
+      .pointer {
+        &:hover {
           background-color: rgba(56, 73, 103, 0.9);
         }
+
         background-color: rgba(56, 73, 103, 0.5);
         cursor: pointer;
         transition: all 0.4s ease 0s;
@@ -223,7 +256,8 @@
         position: relative;
         top: 50px;
         left: 80px;
-        &:before,&:after,span{
+
+        &:before, &:after, span {
           top: 25px;
           right: 25px;
           content: '';
@@ -234,17 +268,20 @@
           transform-origin: right top;
           transition: all 0.4s ease 0s;
         }
-        &:after{
+
+        &:after {
           transform: rotate(-90deg);
         }
-        span{
+
+        span {
           width: 50px;
           height: 3px;
           transform: rotate(-45deg);
         }
       }
     }
-    .pointer__txt{
+
+    .pointer__txt {
       position: relative;
       top: 70px;
       width: 220px;
@@ -255,49 +292,56 @@
     }
   }
 }
-.best{
-  .best__row{
+
+.best {
+  .best__row {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
-    @include laptop{
+    @include laptop {
       flex-direction: column;
       align-items: center;
     }
-    .best__block{
+
+    .best__block {
       max-width: 350px;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      .best__svg{
-          color: $green;
-          margin: 25px;
+
+      .best__svg {
+        color: $green;
+        margin: 25px;
       }
-      .small{
+
+      .small {
         margin: 0;
       }
-      .best__name{
+
+      .best__name {
         font-size: 22px;
         padding: 20px 0;
-        @include mobile-L{
+        @include mobile-L {
           font-size: 20px;
         }
-        @include mobile-M{
+        @include mobile-M {
           font-size: 18px;
           //color: $green;
         }
       }
-      .best__description{
+
+      .best__description {
         display: flex;
         flex-direction: column;
         align-items: center;
         line-height: 25px;
-        @include mobile-M{
+        @include mobile-M {
           font-size: 16px;
         }
-        .best__txt{
-          &:before{
+
+        .best__txt {
+          &:before {
             content: '>';
           }
         }
