@@ -386,6 +386,7 @@ main {
 }
 
 .services .services__row .card span {
+  cursor: pointer;
   padding: 0 0 0 20px;
   font-weight: 600;
   font-style: normal;
@@ -397,6 +398,10 @@ main {
   line-height: 30px;
   border-bottom: 2px solid #fff;
   z-index: 2;
+}
+
+.services .services__row .card span:hover + div {
+  background-color: rgba(40, 51, 74, 0.4);
 }
 
 .services .services__row .card div {
@@ -570,6 +575,10 @@ main {
 .abonements_block .cards .card {
   border-radius: 25px;
   background-color: rgba(56, 73, 103, 0.3);
+  background-image: url("../img/bag.svg");
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position: right center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,6 +635,10 @@ main {
 .sale .sale__card {
   border-radius: 25px;
   background-color: rgba(56, 73, 103, 0.4);
+  background-image: url("../img/bag.svg");
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position: bottom center;
   max-width: 1000px;
   width: 100%;
   margin: 25px auto;
@@ -673,6 +686,52 @@ main {
 
 .sale .sale__card .sale__txt .sale__PC:before {
   content: "*";
+}
+
+.block_line {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
+}
+
+.block_line .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 300px;
+  width: 100%;
+  border: 2px solid #384967;
+}
+
+.block_line .block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.block_line .block .block_title {
+  font-size: 23px;
+  font-weight: 800;
+  padding: 20px 0 0;
+  text-transform: uppercase;
+}
+
+.block_line .block .block_subtitle {
+  padding: 20px;
+  line-height: 20px;
 }
 
 .first_sport .first_title {

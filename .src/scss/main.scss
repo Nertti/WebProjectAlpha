@@ -206,6 +206,7 @@
         border-radius: 30px;
       }
       span {
+        cursor: pointer;
         padding: 0 0 0 20px;
         font-weight: 600;
         font-style: normal;
@@ -218,6 +219,9 @@
         border-bottom: 2px solid #fff;
         z-index: 2;
         //text-transform: uppercase;
+        &:hover + div{
+          background-color: rgba(40, 51, 74, 0.40);
+        }
       }
 
       div {

@@ -11,6 +11,10 @@
   .sale__card{
     border-radius: 25px;
     background-color: rgba(56, 73, 103, 0.4);
+    background-image: url("../img/bag.svg");
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: bottom center;
     max-width: 1000px;
     width: 100%;
     margin: 25px auto;
