@@ -734,6 +734,10 @@ main {
   line-height: 20px;
 }
 
+.block_row .block_line .block .button {
+  margin: 0 0 20px;
+}
+
 .first_sport .first_title {
   text-align: center;
   padding: 50px 0 0;
