@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>index</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
+    <title>Контакты</title>
     <link rel="stylesheet" href="css/style.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +18,30 @@
     <main class="main">
         <div class="container">
 
+            <div class="contact">
+                <div class="vid">
+                    <video src="img/1.mp4" preload="metadata" loop muted autoplay></video>
+                </div>
+                <div class="txt_info">
+
+                </div>
+            </div>
+
+            <div class="map__title">Карта проезда</div>
+            <div class="map" style="position:relative;overflow:hidden;">
+                <a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0;">Минск</a>
+                <a href="https://yandex.by/maps/157/minsk/?ll=27.479139%2C53.855649&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=27.479023%2C53.856151&whatshere%5Bzoom%5D=17.38&z=17.38" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Дзержинского, 115 — Яндекс.Карты</a>
+                <iframe src="https://yandex.by/map-widget/v1/-/CCUqfRT8KB" allowfullscreen="true" style="position:relative;">
+                </iframe>
+            </div>
+            <div class="abon">
+                <div class="title">Гибкие цены на все виды занятий</div>
+                <div onclick="location.href='index2.html'" class="button">Абонементы</div>
+            </div>
         </div>
     </main>
     @@include('_footer.html')
 </div>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="js/script.min.js"></script>
 </body>
 </html>

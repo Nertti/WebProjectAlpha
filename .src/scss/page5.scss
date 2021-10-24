@@ -1,0 +1,44 @@
+
+.contact{
+  padding: 25px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  .vid{
+    video{
+      max-width: 650px;
+      width: 100%;
+    }
+  }
+  .txt_info{
+
+  }
+}
+
+.map__title{
+  font-size: 25px;
+  font-weight: 500;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.map{
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
+.abon{
+  .title{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  .button{
+    margin: 20px auto;
+  }
+}
