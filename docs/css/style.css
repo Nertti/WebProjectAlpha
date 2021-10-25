@@ -753,6 +753,37 @@ main {
   width: 100%;
 }
 
+.contact .txt_info {
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.contact .txt_info .contact__row {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 25px;
+  background-color: #daded9;
+  padding: 25px;
+}
+
+.contact .txt_info .contact__row img {
+  width: 40px;
+  padding-right: 10px;
+}
+
+.contact .txt_info .contact__row .contact__txt {
+  font-size: 25px;
+  line-height: 35px;
+  color: #101820;
+}
+
 .map__title {
   font-size: 25px;
   font-weight: 500;

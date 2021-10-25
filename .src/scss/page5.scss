@@ -10,7 +10,30 @@
     }
   }
   .txt_info{
-
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 500;
+    //width: 100%;
+    .contact__row{
+      //max-width: 330px;
+      //width: 100%;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 25px;
+      background-color: #daded9;
+      padding: 25px;
+      img{
+        width: 40px;
+        padding-right: 10px;
+      }
+      .contact__txt{
+        font-size: 25px;
+        line-height: 35px;
+        color: #101820;
+      }
+    }
   }
 }
 
