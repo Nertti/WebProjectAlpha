@@ -1,0 +1,47 @@
+.reviews{
+  padding: 20px 0;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  .review{
+    border-radius: 10px;
+    border: 1px solid #384967;
+    margin: 25px 0;
+    .review__title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px 10px 25px;
+      background-color: #384967;
+      border-radius: 10px 10px 0 0;
+      .review__name{
+        font-size: 25px;
+        line-height: 30px;
+      }
+      .review__reaction{
+        font-size: 16px;
+        text-decoration: underline;
+      }
+      .good{
+        color: green;
+      }
+      .bad{
+        color: red;
+      }
+    }
+    .review__description{
+      padding: 15px 15px 15px 25px;
+      position: relative;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      &:before{
+        content: '–';
+        position: absolute;
+        left: 10px;
+      }
+    }
+  }
+  .button__review{
+    width: 260px;
+  }
+}

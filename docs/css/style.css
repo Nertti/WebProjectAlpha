@@ -816,6 +816,132 @@ main {
   margin: 20px auto;
 }
 
+.reviews {
+  padding: 20px 0;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.reviews .review {
+  border-radius: 10px;
+  border: 1px solid #384967;
+  margin: 25px 0;
+}
+
+.reviews .review .review__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px 10px 25px;
+  background-color: #384967;
+  border-radius: 10px 10px 0 0;
+}
+
+.reviews .review .review__title .review__name {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews .review .review__title .review__reaction {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.reviews .review .review__title .good {
+  color: green;
+}
+
+.reviews .review .review__title .bad {
+  color: red;
+}
+
+.reviews .review .review__description {
+  padding: 15px 15px 15px 25px;
+  position: relative;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.reviews .review .review__description:before {
+  content: "–";
+  position: absolute;
+  left: 10px;
+}
+
+.reviews .button__review {
+  width: 260px;
+}
+
+.way {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px 50px 50px;
+}
+
+.way .way__txt {
+  padding: 0 50px;
+}
+
+.way .way__txt .txt__description {
+  padding: 10px 0 0;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+}
+
+.plus5__title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.plus5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plus5 .plus5__card {
+  max-width: 350px;
+  width: 100%;
+}
+
+.plus5 .plus5__card .plus5__card_title {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.plus5 .plus5__card .plus5__card_description {
+  line-height: 20px;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 0 0 20px;
+}
+
 .first_sport .first_title {
   text-align: center;
   padding: 50px 0 0;
