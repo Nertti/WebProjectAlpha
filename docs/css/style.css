@@ -746,31 +746,39 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact .vid video {
-  max-width: 650px;
-  width: 100%;
+  width: 650px;
+  border-radius: 25px;
 }
 
 .contact .txt_info {
-  font-size: 30px;
-  line-height: 35px;
+  padding: 10px;
+  margin-left: 30px;
+  color: #101820;
+  font-size: 40px;
+  line-height: 75px;
   text-align: center;
   font-weight: 500;
+  background-color: #daded9;
+  border-radius: 25px;
+  width: 100%;
 }
 
 .contact .txt_info .contact__row {
-  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 25px;
   background-color: #daded9;
-  padding: 25px;
+  padding: 15px;
 }
 
 .contact .txt_info .contact__row img {
@@ -779,8 +787,8 @@ main {
 }
 
 .contact .txt_info .contact__row .contact__txt {
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 35px;
+  line-height: 45px;
   color: #101820;
 }
 
@@ -889,7 +897,7 @@ main {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 20px 50px 50px;
+  padding: 20px 20px 50px;
 }
 
 .way .way__txt {
@@ -898,7 +906,7 @@ main {
 
 .way .way__txt .txt__description {
   padding: 10px 0 0;
-  line-height: 25px;
+  line-height: 23px;
   letter-spacing: 0.6px;
 }
 
@@ -1172,6 +1180,24 @@ main {
   .abonements_block .cards .card {
     max-width: 300px;
   }
+
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact .vid video {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .contact .txt_info {
+    max-width: 650px;
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 
 @media screen and (max-width: 1077px) {
@@ -1265,6 +1291,43 @@ main {
 
   .block_row .block_line .block {
     margin: 20px;
+  }
+
+  .way {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0;
+  }
+
+  .way .way__txt {
+    padding: 20px 0;
+  }
+
+  .way .way__txt .txt__title {
+    text-align: center;
+  }
+
+  .plus5__title {
+    text-align: center;
+  }
+
+  .plus5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .plus5 .plus5__card .plus5__card_title {
+    text-align: center;
   }
 }
 
@@ -1487,6 +1550,10 @@ main {
     width: 100%;
   }
 
+  .contact .txt_info .contact__row .contact__txt {
+    font-size: 24px;
+  }
+
   .first_sport .block_sport .block__name {
     padding: 50px 0;
   }
@@ -1528,6 +1595,14 @@ main {
     width: 250px;
   }
 
+  .contact .txt_info {
+    font-size: 25px;
+  }
+
+  .contact .txt_info .contact__row .contact__txt {
+    font-size: 20px;
+  }
+
   .first_sport .block_sport .first_btn {
     margin: 20px auto;
   }
@@ -1544,6 +1619,14 @@ main {
 
   .best .best__row .best__block .best__description {
     font-size: 16px;
+  }
+
+  .contact .txt_info .contact__row img {
+    display: none;
+  }
+
+  .way img {
+    width: 300px;
   }
 
   .first_sport .block_sport .block_input {

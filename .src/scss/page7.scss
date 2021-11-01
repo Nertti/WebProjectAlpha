@@ -2,14 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 20px 50px 50px;
-
+  padding: 20px 20px 50px;
+  @include laptop{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  img{
+    @include mobile-M{
+      width: 300px;
+    }
+  }
   .way__txt {
     padding: 0 50px;
-
+    @include laptop{
+      padding: 20px 0;
+    }
+    .txt__title{
+      @include laptop{
+        text-align: center;
+      }
+    }
     .txt__description {
       padding: 10px 0 0;
-      line-height: 25px;
+      line-height: 23px;
       letter-spacing: 0.6px;
     }
   }
@@ -20,13 +36,19 @@
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
+  @include laptop{
+    text-align: center;
+  }
 }
 
 .plus5 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
+  @include laptop{
+    flex-direction: column;
+    align-items: center;
+  }
   .plus5__card {
     max-width: 350px;
     width: 100%;
@@ -36,6 +58,9 @@
       font-size: 20px;
       text-transform: uppercase;
       padding: 20px 0;
+      @include laptop{
+        text-align: center;
+      }
     }
 
     .plus5__card_description {
